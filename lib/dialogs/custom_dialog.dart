@@ -25,7 +25,7 @@ class _CustomContainerState extends State<CustomContainer> {
 }
 
 @widgetBook.UseCase(name: 'Contaienr1', type: CustomContainer)
-Widget CustomContainerTetst(BuildContext context) {
+Widget CustomContainerTest(BuildContext context) {
   return const Scaffold(
     body: CustomContainer(),
   );

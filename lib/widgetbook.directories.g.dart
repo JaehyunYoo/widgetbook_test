@@ -40,7 +40,7 @@ final directories = <_i1.WidgetbookNode>[
         useCases: [
           _i1.WidgetbookUseCase(
             name: 'Contaienr1',
-            builder: _i3.CustomContainerTetst,
+            builder: _i3.CustomContainerTest,
           )
         ],
       )
