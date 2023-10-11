@@ -10,6 +10,11 @@ class WidgetbookApp extends StatelessWidget {
   const WidgetbookApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return Widgetbook.material(directories: directories);
+    return Widgetbook.material(
+      directories: directories,
+      addons: [
+        DeviceFrameAddon(devices: Devices.ios.all),
+      ],
+    );
   }
 }

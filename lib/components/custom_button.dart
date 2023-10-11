@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgetbook/widgetbook.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 
 class CustomButton extends StatelessWidget {
@@ -29,11 +30,13 @@ class CustomButton extends StatelessWidget {
   type: CustomButton,
 )
 Widget enabledButton(BuildContext context) {
-  return Center(
-    child: CustomButton(
-      title: 'Enabled',
-      textColor: Colors.white,
-      onPressed: () {},
+  return Scaffold(
+    body: Center(
+      child: CustomButton(
+        title: context.knobs.string(label: 'Title', initialValue: 'Click Me'),
+        textColor: Colors.white,
+        onPressed: () {},
+      ),
     ),
   );
 }
