@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:widget_book_test/components/custom_button.dart';
 import 'package:widget_book_test/dialogs/custom_dialog.dart';
 import 'package:widgetbook/widgetbook.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 
-void main() => runApp(const WidgetbookApp());
+void main() => runApp(ProviderScope(child: WidgetbookApp()));
 
 @widgetbook.App()
 class WidgetbookApp extends StatelessWidget {
