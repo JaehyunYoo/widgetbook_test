@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetBook;
 
 class CustomContainer extends StatefulWidget {
   final double? width;
@@ -22,11 +21,4 @@ class _CustomContainerState extends State<CustomContainer> {
       ),
     );
   }
-}
-
-@widgetBook.UseCase(name: 'Contaienr1', type: CustomContainer)
-Widget CustomContainerTest(BuildContext context) {
-  return const Scaffold(
-    body: CustomContainer(),
-  );
 }
